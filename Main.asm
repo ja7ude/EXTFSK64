@@ -423,7 +423,7 @@ _TEXT	segment dword public use32 'CODE'
 @Is64bitOS$qv	ends
 _TEXT	ends
 _DATA	segment dword public use32 'DATA'
-$ifkimmia	label	byte
+$ifkihnia	label	byte
 	db	46
 	db	92
 	db	105
@@ -561,7 +561,7 @@ _TEXT	segment dword public use32 'CODE'
 @53:
 	push      esi
 	lea       edi,dword ptr [ebp-68]
-	mov       esi,offset $ifkimmia
+	mov       esi,offset $ifkihnia
 	mov       ecx,3
 	rep   movsd
 	movsw
@@ -2645,7 +2645,7 @@ _TEXT	segment dword public use32 'CODE'
 _TEXT	ends
 _DATA	segment dword public use32 'DATA'
 	align	2
-$ajkimmia	label	word
+$ajkihnia	label	word
 	dw	888
 	dw	956
 	dw	632
@@ -2695,12 +2695,12 @@ _TEXT	segment dword public use32 'CODE'
 	push      edx
 	call      @_memset
 ?live16431@32: ; EDI = n
-	mov       eax,dword ptr [$ajkimmia]
+	mov       eax,dword ptr [$ajkihnia]
 ?live16431@48: ; 
 	add       esp,12
 ?live16431@64: ; EDI = n
 	mov       dword ptr [ebp-52],eax
-	mov       eax,dword ptr [$ajkimmia+4]
+	mov       eax,dword ptr [$ajkihnia+4]
 	mov       dword ptr [ebp-48],eax
 ?live16431@80: ; 
 	xor       edi,edi
@@ -6511,13 +6511,13 @@ _TEXT	ends
  ?debug  C FB0A4D61696E00
  ?debug  C 9F76636C6535302E6C6962
 	?debug	D "C:\PROGRAM FILES (X86)\BORLAND\CBUILDER5\INCLUDE\assert.h" 10339 10240
-	?debug	D "D:\MyProjects\amprog\ExtFsk\ExtFsk64eOpenSource\THighTimer.h" 17578 15312
+	?debug	D "D:\MyProjects\amprog\ExtFsk\ExtFsk64eOpenSource\THighTimer.h" 19344 23049
 	?debug	D "C:\PROGRAM FILES (X86)\BORLAND\CBUILDER5\INCLUDE\_nfile.h" 10339 10240
 	?debug	D "C:\PROGRAM FILES (X86)\BORLAND\CBUILDER5\INCLUDE\stdio.h" 10339 10240
 	?debug	D "C:\PROGRAM FILES (X86)\BORLAND\CBUILDER5\INCLUDE\mmsystem.h" 10339 10240
 	?debug	D "C:\PROGRAM FILES (X86)\BORLAND\CBUILDER5\INCLUDE\VCL\Inifiles.hpp" 10339 10240
 	?debug	D "C:\PROGRAM FILES (X86)\BORLAND\CBUILDER5\INCLUDE\VCL\Buttons.hpp" 10339 10240
-	?debug	D "D:\MyProjects\amprog\ExtFsk\ExtFsk64eOpenSource\Main.h" 19344 21241
+	?debug	D "D:\MyProjects\amprog\ExtFsk\ExtFsk64eOpenSource\Main.h" 19344 23058
 	?debug	D "C:\PROGRAM FILES (X86)\BORLAND\CBUILDER5\INCLUDE\VCL\extctrls.hpp" 10339 10240
 	?debug	D "C:\PROGRAM FILES (X86)\BORLAND\CBUILDER5\INCLUDE\commdlg.h" 10339 10240
 	?debug	D "C:\PROGRAM FILES (X86)\BORLAND\CBUILDER5\INCLUDE\VCL\CommDlg.hpp" 10339 10240
@@ -6622,5 +6622,5 @@ _TEXT	ends
 	?debug	D "C:\PROGRAM FILES (X86)\BORLAND\CBUILDER5\INCLUDE\VCL\system.hpp" 10339 10240
 	?debug	D "C:\PROGRAM FILES (X86)\BORLAND\CBUILDER5\INCLUDE\VCL\vcl0.h" 10339 10240
 	?debug	D "C:\PROGRAM FILES (X86)\BORLAND\CBUILDER5\INCLUDE\VCL\vcl.h" 10339 10240
-	?debug	D "D:\MyProjects\amprog\ExtFsk\ExtFsk64eOpenSource\Main.cpp" 17608 14122
+	?debug	D "D:\MyProjects\amprog\ExtFsk\ExtFsk64eOpenSource\Main.cpp" 19344 23028
 	end
